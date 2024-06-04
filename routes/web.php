@@ -24,3 +24,6 @@ Route::get('/Detail_furniture', [DetailController::class, 'Detail']);
 
 //Kontak Routes
 Route::get('/kontak', [KontakController::class, 'Kontak']);
+
+//Route Simpan Kontak
+Route::post('/kontak', [KontakController::class, 'simpan'])->name('contact.simpan');

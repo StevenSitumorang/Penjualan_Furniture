@@ -10,6 +10,6 @@ class ProdukController extends Controller
     public function Produk()
     {
         return view('produk');
-        
+
     }
 }
