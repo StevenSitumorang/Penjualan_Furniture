@@ -4,6 +4,8 @@ use App\Http\Controllers\DetailController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -16,11 +18,20 @@ Route::get('/delete/{id}', [ProductController::class, 'delete'])->name('delete')
 Route::get('/edit/{id}', [ProductController::class, 'edit'])->name('edit');
 Route::post('/edit/{id}', [ProductController::class, 'update']);
 
+//Route Dashboard
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
 //Produk Routes 
-Route::get('/Produk_furniture', [ProdukController::class, 'Produk']);
+Route::get('/produk_furniture', [ProdukController::class, 'Produk']);
 
 //Detail Routes 
-Route::get('/Detail_furniture', [DetailController::class, 'Detail']);
+Route::get('/detail_furniture', [DetailController::class, 'Detail']);
 
 //Kontak Routes
 Route::get('/kontak', [KontakController::class, 'Kontak']);
+
+//Route About
+Route::get('/about', [AboutController::class, 'about']);
+

@@ -1,43 +1,43 @@
 @extends('layout.main')
 
-@section('title', 'Daftar Produk')
+@section('title', 'Contact')
 
 @section('content')
 
-
-
+<div class="mt-15 py-20 px-5">
+<main class="container mx-auto mt-20">
 <!-- Contact Section -->
 <section class="container mx-auto px-4 py-8">
     <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
         <div class="p-6">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Hubungi Kami</h2>
-            <p class="text-gray-700 mb-6">Silakan hubungi kami jika Anda memiliki pertanyaan atau ingin mengetahui
-                lebih lanjut tentang produk kami.</p>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
+            <p class="text-gray-700 mb-6">Feel free to contact us if you have any questions or want to know more
+                about our products.</p>
 
-            <!-- Form Kontak -->
+            <!-- Contact Form -->
             <form action="#" method="POST">
                 <div class="mb-4">
-                    <label for="nama" class="block text-gray-700 font-medium">Nama</label>
-                    <input type="text" id="nama" name="nama"
+                    <label for="name" class="block text-gray-700 font-medium">Name</label>
+                    <input type="text" id="name" name="name"
                         class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-                        placeholder="Masukkan nama Anda" required>
+                        placeholder="Enter your name" required>
                 </div>
                 <div class="mb-4">
                     <label for="email" class="block text-gray-700 font-medium">Email</label>
                     <input type="email" id="email" name="email"
                         class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-                        placeholder="Masukkan alamat email Anda" required>
+                        placeholder="Enter your email address" required>
                 </div>
                 <div class="mb-4">
-                    <label for="pesan" class="block text-gray-700 font-medium">Pesan</label>
-                    <textarea id="pesan" name="pesan" rows="4"
+                    <label for="message" class="block text-gray-700 font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4"
                         class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-                        placeholder="Tulis pesan Anda" required></textarea>
+                        placeholder="Write your message" required></textarea>
                 </div>
                 <div class="text-center">
                     <button type="submit"
-                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Kirim
-                        Pesan</button>
+                        class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded">Send
+                        Message</button>
                 </div>
             </form>
         </div>

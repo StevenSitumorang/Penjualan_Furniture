@@ -2,6 +2,9 @@
 @section('title','Update Product')
  
 @section('content')
+
+<div class="mt-15 py-20 px-5">
+    <main class="container mx-auto mt-20">
 <div class="my-5">
     <div class="container mx-auto max-w-xl shadow py-4 px-10">
         <a href="{{ route('home') }}" class="px-5 py-2 bg-red-500 rounded-md text-white text-lg shadow-md">Go Back</a>

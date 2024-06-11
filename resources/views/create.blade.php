@@ -3,7 +3,7 @@
 @section('title','Create Product')
 
 @section('content')
-<div class="my-5">
+<div class="mt-10 px-10 py-20">
     <div class="container mx-auto max-w-xl shadow-lg py-4 px-10 bg-blue-100 rounded-md">
         @if (session()->has('error'))
         <div class="bg-red-500 text-white px-4 py-2 rounded-md mb-4">
