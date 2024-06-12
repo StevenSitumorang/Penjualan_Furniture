@@ -34,8 +34,10 @@
             </div>
         </div>
         <main>
+        <!--div class="flex-1 pt-10"-->
             @yield('content')
         </main>
+       
     </div>
     <!-- Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>

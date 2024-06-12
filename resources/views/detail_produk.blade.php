@@ -61,7 +61,7 @@
 
                     <!-- Add to Cart Button -->
                     <button class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
-                </div>
+</div>
             </div>
         </div>
     </main>

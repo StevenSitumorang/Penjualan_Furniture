@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title', 'Furniture Sales Web Application')
+@section('title', 'Product List')
 
 @section('content')
 

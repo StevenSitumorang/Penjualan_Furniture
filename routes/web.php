@@ -35,3 +35,6 @@ Route::get('/kontak', [KontakController::class, 'Kontak']);
 //Route About
 Route::get('/about', [AboutController::class, 'about']);
 
+
+//Route Simpan Kontak
+Route::post('/kontak', [KontakController::class, 'simpan'])->name('contact.simpan');
