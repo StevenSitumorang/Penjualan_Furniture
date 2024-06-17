@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
  
 class ProductController extends Controller
 {
-    public function index()
+    public function product()
     {
         $products = Product::orderBy('id', 'desc')->get();
         $total = Product::count();
