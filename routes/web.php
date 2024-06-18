@@ -1,10 +1,8 @@
 <?php
 
-<<<<<<< HEAD
 use App\Http\Controllers\EditProfileController;
 use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\TransactionController;
-=======
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\ProdukController;
@@ -12,13 +10,11 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\LoginController;
->>>>>>> 0721052d5016ac3e52570a9df7ef0a4dee31aeb9
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< HEAD
 
 Route::get('/keranjang', [KeranjangController::class, 'index']);
 Route::delete('/keranjang/{id}', [KeranjangController::class, 'destroy']);
@@ -33,7 +29,6 @@ Route::get('/transaction', [TransactionController::class, 'index'])->name('trans
 Route::post('/transaksi', [TransactionController::class, 'store'])->name('transactions.store');
 
 
-=======
 Route::get('/penjual/product', [ProductController::class, 'product'])->name('home');
 Route::get('/create', [ProductController::class, 'create'])->name('create');
 Route::post('/create', [ProductController::class, 'save']);
@@ -64,4 +59,3 @@ Route::post('/kontak', [KontakController::class, 'simpan'])->name('contact.simpa
 
 //Route Login
 Route::get('/home', [LoginController::class, 'index']);
->>>>>>> 0721052d5016ac3e52570a9df7ef0a4dee31aeb9
