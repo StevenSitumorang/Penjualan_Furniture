@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/penjual/product', [ProductController::class, 'prouct'])->name('home');
+Route::get('/penjual/product', [ProductController::class, 'product'])->name('home');
 Route::get('/create', [ProductController::class, 'create'])->name('create');
 Route::post('/create', [ProductController::class, 'save']);
 Route::get('/delete/{id}', [ProductController::class, 'delete'])->name('delete');
