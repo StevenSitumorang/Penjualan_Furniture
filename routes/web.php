@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\EditProfileController;
+use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\KeranjangController;
+use App\Http\Controllers\PaymentValidationController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\KontakController;
@@ -59,3 +61,9 @@ Route::post('/kontak', [KontakController::class, 'simpan'])->name('contact.simpa
 
 //Route Login
 Route::get('/home', [LoginController::class, 'index']);
+
+//Route Untuk Validasi
+Route::post('validations/{validation}/validate', [PaymentValidationController::class, 'validatePayment'])->name('validations.validate');
+
+//Route untuk Invoice
+Route::post('invoices/{invoice}/approve', [InvoiceController::class, 'approve'])->name('invoices.approve');
