@@ -9,7 +9,7 @@ Route::get('/', function () {
 // Resource route for products
 Route::resource('products', ProductController::class);
 
-// Optional: Additional routes if you need specific custom routes
+// 
 // Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 // Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
 // Route::post('/products/store', [ProductController::class, 'store'])->name('products.store');
